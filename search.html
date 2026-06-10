@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f4f4f4;
+        }
+
+        .container{
+            text-align:center;
+        }
+
+        input{
+            width:300px;
+            padding:12px;
+            font-size:16px;
+        }
+
+        button{
+            padding:12px 20px;
+            font-size:16px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Search</h2>
+
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input
+            type="text"
+            name="search_query"
+            placeholder="Enter search term"
+            required>
+
+        <button type="submit">Search</button>
+
+        <!-- Optional settings -->
+        <input type="hidden" name="_subject" value="New Search Submission">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</div>
+
+</body>
+</html>
